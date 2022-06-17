@@ -1,0 +1,154 @@
+@import '../../variables.scss';
+
+.cat-list-head{
+    font-family: $headFont;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 10px 0px -30px 0px;
+    padding: 36px 80px 0px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 1px #000000;
+}
+
+.cat-list-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__cat-card{
+        display: flex;
+        position: relative;
+        clip-path: polygon(11% 0, 70% 0%, 100% 0, 100% 70%, 100% 100%, 0 100%, 0% 70%, 0 7.5%);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin: 30% 40px 0px 40px;
+        max-width: 320px;
+        height: 480px;
+        border: $defaultBorder;
+        border-radius: 12px;
+        background: #fff url('../../assets/cat.png') no-repeat 50% 190%;
+        cursor: pointer;
+        &::before{
+            content: '';
+            width: 50px;
+            height: 50px;
+            background: transparent;
+            border-right: $defaultBorder;
+            top: -28px;
+            left: -30px;
+            position: absolute;
+            transform: rotate(45deg);
+        }
+        &__block{
+            display: flex;
+            font-family: $appFont;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 55px 0px 51px;
+        &__name{
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 56px;
+            padding: 0px 2px 0px 0px;
+            margin: 0;
+        }
+        &__taste{
+            font-weight: 700;
+            font-size: 24px;  
+            width: 200px; 
+            margin: 0; 
+        }
+        &__header{
+            font-family: $headFont;
+            font-weight: 400;
+            font-size: 16px;
+            width: 205px;
+            line-height: 19px;
+            padding: 0;
+        }
+        &__portion{
+            font-size: 14px;
+            margin: 0;
+            color: $mainGray;
+            width: 200px;
+            padding: 10px 0px 0px 0px;
+        }
+        &__present{
+            font-size: 14px;
+            margin: 0;
+            color: $mainGray;
+            width: 200px;
+            padding: 4px 0px 0px 0px;
+        }
+        &__satisfied{
+            font-size: 14px;
+            margin: 0;
+            color: $mainGray;
+            width: 200px;
+            padding: 3px 0px 0px 0px;
+        }
+    }
+    &__buy{
+        margin: 0;
+        padding: 10px;
+        font-family: $appFont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        color: #FFFFFF;
+        &__a{
+            color: #1698D9;
+            text-decoration: none;
+            border-bottom: 1px dashed #1698D9; 
+        }
+    }
+        &__kg{
+            background: #1698D9;
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            align-self: flex-end;
+            margin-right: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+            p{
+                margin: 0;
+                padding: 0;
+                font-family: 'Trebuchet MS';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 42px;
+                line-height: 44px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.hidden{
+    border: $selectBorder;
+}
+.hidden::before{
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-right: $selectBorder;
+    top: -28px;
+    left: -30px;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.kg{
+    background: #D91667;
+}
+.cat-group{
+    display: flex;
+    flex-direction: column;
+}

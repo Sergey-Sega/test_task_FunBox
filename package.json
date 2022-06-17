@@ -2,6 +2,7 @@
   "name": "test_task_funbox",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sergey-sega.github.io/test_task_FunBox/",
   "dependencies": {
     "node-sass": "4.14.1",
     "react": "^18.2.0",

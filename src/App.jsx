@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css';
+import { CatListPage } from './components/CatCard/CatListPage';
 
 function App() {
   return (
     <div className="App">
-      Hello World !
+      <CatListPage/>
     </div>
   );
 }

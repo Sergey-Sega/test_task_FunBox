@@ -1,0 +1,23 @@
+@import 'variables';
+
+@font-face {
+  font-family: 'Exo2.0-Thin';
+  src: url('./assets/fonts/Exo2.0-Thin.otf');
+  font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: url('./assets/fonts/trebuchetms.ttf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: url('./assets/Pattern.png');
+}
+.App {
+  height: 100vh;
+}
