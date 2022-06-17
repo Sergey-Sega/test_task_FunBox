@@ -152,3 +152,11 @@
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 1200px) {
+    .cat-list-page{
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+  }
+}
